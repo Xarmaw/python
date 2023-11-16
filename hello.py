@@ -133,7 +133,7 @@ print(p)
 print(o)
 print(l)
 
-'''
+
 
 kontakty={
     "Jan":123456789,
@@ -150,22 +150,27 @@ print(kontakty.values())
 
 zbior={1,2,3,4}
 
+'''
+
+f=open("text.txt", "r")
+print(f.read())
+f.close()
+
+f=open("text.txt", "a")
+f.write("gzz")
+f.close
+
+f=open("text.txt", "a")
+f.writre("ggg\n")
+f.close()
+
+f=open("text.txt", "r")
 
 
+for i in f:
+    print(i)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+f.close
 
 
 
