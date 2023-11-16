@@ -22,18 +22,23 @@ for z in range(0,i):
     
     elif komputer=="papier" and a=="kamien":
         print("przegrales papier bije kamien")
+        break
     
     elif komputer=="papier" and a=="papier":
         print("remis")
+        break
     
     elif komputer=="papier" and a=="nozyce":
         print("wygrales nozyce bija papier")
+        break
     
     elif komputer=="nozyce" and a=="kamien":
         print("wygrales kamien bije nozyce")
+        break
     
     elif komputer=="nozyce" and a=="papier":
         print("przegrales nozyce bija papier")
+        break
     
     elif komputer=="nozyce" and a=="nozyce":
         print("remis")
