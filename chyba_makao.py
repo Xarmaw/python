@@ -16,31 +16,52 @@ if h<21:
 if j=="tak" or j=="Tak":
             p=random.choice(karty)
             Bot.append(p)
-elif j=="nie" or j=="Nie":
-      print()
 
 
 
 for z in range(0,2):
     b=random.choice(karty)
     c.append(b)
-print(c)
+
 d=c[0]+c[1]
 v=1
 
 while d<21:
-    a=input(f"oto sa twoje karty czy chcesz dobrac nastepna {c}",)
-    while a not in bull:
-        a=input("chcesz dobrac karte tak lub nie przypominam twojimi kartami sa",c)
-        if a=="tak" or a=="Tak":
-            b=random.choice(karty)
-            c.append(b)
-            v=v+1
-            d+c[v]
+    pytanko=a=input(f"oto sa twoje karty czy chcesz dobrac nastepna {c}",)
+    if a=="tak" or a=="Tak":
+        b=random.choice(karty)
+        c.append(b)
+        v=v+1
+        d=d+c[v]
+        
+    elif a=="nie" or a=="Nie":
+        break
+    else:
+      a=input(f"oto sa twoje karty czy chcesz dobrac nastepna {c}",)   
 
-        elif a=="nie" or a=="Nie":
-            break
+if h>21 and d>21:
+     print(f"przegrales. twoje karty{c} karty bota {Bot}")
 
 if h>21 and d<21:
-     print("brawo wygrales")
+     print(f"brawo wygrales twoje karty{c} karty bota {Bot}")
+
+if h<21 and h>d and d<21:
+     print(f"przegrales twoje karty{c} karty bota {Bot}")
+if h<21 and h<d and d<21:
+     print(f"wygrales twoje karty{c} karty bota {Bot}")
+if h>21 and h>d and d<21:
+     print(f"wygrales twoje karty{c} karty bota {Bot}")
+if h<21 and h<d and d>21:
+     print(f"przegrales twoje karty{c} karty bota {Bot}")
+
+
+
+
+
+
+
+
+
+
+
 
